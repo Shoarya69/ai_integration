@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordic AI Chat - Project Documentation</title>
+    <style>
+        body {
+            font-family: Inter, system-ui, sans-serif;
+            margin: 40px auto;
+            max-width: 900px;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+        h1, h2, h3 {
+            color: #111827;
+        }
+        code {
+            background: #eef2f7;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        pre {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Nordic AI Chat</h1>
+<p>
+A modern full-stack AI chat application built using <strong>React (Vite + TypeScript)</strong> 
+and <strong>FastAPI (Async)</strong>, powered by the <strong>Groq API (LLaMA3)</strong>.
+</p>
+
+<div class="section">
+    <h2>🚀 Tech Stack</h2>
+    <div>
+        <span class="badge">React + Vite</span>
+        <span class="badge">TypeScript</span>
+        <span class="badge">TailwindCSS</span>
+        <span class="badge">FastAPI (Async)</span>
+        <span class="badge">Groq API</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🧠 Architecture</h2>
+    <pre>
+Client (React)
+      ↓
+FastAPI API Gateway (Async)
+      ↓
+Groq AI Service (Async)
+    </pre>
+    <ul>
+        <li>Frontend communicates via REST API</li>
+        <li>Backend handles non-blocking async AI requests</li>
+        <li>Service layer abstraction for AI provider</li>
+        <li>Microservice-inspired separation of concerns</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>✨ Features</h2>
+    <ul>
+        <li>Modern Nordic minimalist UI</li>
+        <li>Real-time AI chat interaction</li>
+        <li>Async backend architecture</li>
+        <li>Typing indicator simulation</li>
+        <li>Secure environment variable handling</li>
+        <li>Production-ready API structure</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>⚙ Backend Setup</h2>
+    <h3>Install Dependencies</h3>
+    <pre>pip install fastapi uvicorn groq python-dotenv</pre>
+
+    <h3>Create .env</h3>
+    <pre>GROQ_API_KEY=your_groq_api_key</pre>
+
+    <h3>Run Server</h3>
+    <pre>uvicorn main:app --reload --port 8000</pre>
+
+    <p>Backend URL: <code>http://127.0.0.1:8000</code></p>
+</div>
+
+<div class="section">
+    <h2>💻 Frontend Setup</h2>
+    <h3>Install Dependencies</h3>
+    <pre>npm install</pre>
+
+    <h3>Start Dev Server</h3>
+    <pre>npm run dev</pre>
+
+    <p>Frontend URL: <code>http://localhost:5173</code></p>
+</div>
+
+<div class="section">
+    <h2>🔌 API Endpoint</h2>
+    <h3>POST /api/req</h3>
+    <p><strong>Request:</strong></p>
+    <pre>{
+  "query": "Your message here"
+}</pre>
+
+    <p><strong>Response:</strong></p>
+    <pre>{
+  "response": "AI generated reply"
+}</pre>
+</div>
+
+<div class="section">
+    <h2>🛠 Engineering Highlights</h2>
+    <ul>
+        <li>Fully async FastAPI backend</li>
+        <li>Non-blocking Groq API integration</li>
+        <li>Strong TypeScript typing</li>
+        <li>Clean API gateway structure</li>
+        <li>Microservice-style modular architecture</li>
+        <li>Nginx reverse proxy compatible</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>📈 Future Improvements</h2>
+    <ul>
+        <li>Streaming token responses</li>
+        <li>Database-based chat memory</li>
+        <li>User authentication</li>
+        <li>Model selection support</li>
+        <li>Docker containerization</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>🏁 Summary</h2>
+    <p>
+        Nordic AI Chat demonstrates modern full-stack engineering principles,
+        combining frontend architecture, async backend design, and scalable AI API integration.
+        It serves as a strong foundation for production-ready AI SaaS applications.
+    </p>
+</div>
+
+</body>
+</html>
