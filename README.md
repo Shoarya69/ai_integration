@@ -1,48 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nordic AI Chat - Project Documentation</title>
-    <style>
-        body {
-            font-family: Inter, system-ui, sans-serif;
-            margin: 40px auto;
-            max-width: 900px;
-            line-height: 1.6;
-            color: #333;
-            background: #f9fafb;
-        }
-        h1, h2, h3 {
-            color: #111827;
-        }
-        code {
-            background: #eef2f7;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-        pre {
-            background: #1f2937;
-            color: #f3f4f6;
-            padding: 15px;
-            border-radius: 10px;
-            overflow-x: auto;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .badge {
-            display: inline-block;
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-right: 8px;
-        }
-    </style>
-</head>
+
 <body>
 
 <h1>Nordic AI Chat</h1>
