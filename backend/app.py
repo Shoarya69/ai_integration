@@ -22,5 +22,4 @@ async def get_respons(query:mes):
         result = await gem(query.mess)
     except Exception as e:
         print(e)
-    print(result)
     return {"response": result}

@@ -50,8 +50,8 @@ export function EmptyState({ onExampleClick }: EmptyStateProps) {
                 className="bg-white p-6 rounded-2xl border border-gray-200/50 hover:border-[#8B9DC3]/30 hover:shadow-md transition-all duration-200 text-left group"
               >
                 <Icon className="w-6 h-6 text-[#8B9DC3] mb-3 group-hover:scale-110 transition-transform duration-200" strokeWidth={1.5} />
-                <h3 className="font-medium text-gray-900 mb-1">{example.title}</h3>
-                <p className="text-sm text-gray-500">{example.description}</p>
+                <h3 className="font-medium text-gray-900 mb-1 text-sm md:text-extra">{example.title}</h3>
+                <p className="text-xs md:text-sm text-gray-500">{example.description}</p>
               </button>
             );
           })}
