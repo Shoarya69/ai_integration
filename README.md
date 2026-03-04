@@ -49,29 +49,34 @@ Groq AI Service (Async)
     </ul>
 </div>
 
+<div>
+    <img src="assetes/image.png" width="800">
+
+</div>
+
 <div class="section">
     <h2>⚙ Backend Setup</h2>
     <h3>Install Dependencies</h3>
     <pre>pip install fastapi uvicorn groq python-dotenv</pre>
 
-    <h3>Create .env</h3>
-    <pre>GROQ_API_KEY=your_groq_api_key</pre>
+    Create .env
+    GROQ_API_KEY=your_groq_api_key
 
-    <h3>Run Server</h3>
-    <pre>uvicorn main:app --reload --port 8000</pre>
+    Run Server
+    uvicorn main:app --reload --port 8000
 
-    <p>Backend URL: <code>http://127.0.0.1:8000</code></p>
+    Backend URL: <code>http://127.0.0.1:8000
 </div>
 
 <div class="section">
     <h2>💻 Frontend Setup</h2>
     <h3>Install Dependencies</h3>
     <pre>npm install</pre>
+    
+    Start Dev Server
+    npm run dev
 
-    <h3>Start Dev Server</h3>
-    <pre>npm run dev</pre>
-
-    <p>Frontend URL: <code>http://localhost:5173</code></p>
+    Frontend URL: http://localhost:5173
 </div>
 
 <div class="section">
@@ -82,10 +87,10 @@ Groq AI Service (Async)
   "query": "Your message here"
 }</pre>
 
-    <p><strong>Response:</strong></p>
-    <pre>{
+    Response:{
   "response": "AI generated reply"
-}</pre>
+}
+</pre>
 </div>
 
 <div class="section">

@@ -15,8 +15,12 @@ async def gem(mess: str):
     chat_completion = await client.chat.completions.create(
         messages=[
             {
+                "role": "system",
+                "content": "You are an AI assistant named Nordix AI. If anyone asks your name or asks 'how are you', reply that you are Nordix AI and respond politely."
+            },
+            {
                 "role": "user",
-                "content": mess,
+                "content": mess
             }
         ],
         model="llama-3.3-70b-versatile",
