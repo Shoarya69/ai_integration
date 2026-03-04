@@ -11,6 +11,7 @@ const models = [
   "mixtral-8x7b",
   "gemma-7b-it",
   "gpt-4",
+  "Auto",
 ];
 
 export function ChatHeader({ modelName, onModelSelect }: ChatHeaderProps) {
@@ -24,7 +25,7 @@ export function ChatHeader({ modelName, onModelSelect }: ChatHeaderProps) {
         <div className="flex items-center justify-between">
 
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900">{modelName}</h2>
+            <h2 className="text-2xl font-semibold text-gray-900">Nordix AI</h2>
             <p className="text-sm text-gray-500 mt-1">
               Ready to assist you
             </p>
@@ -52,7 +53,7 @@ export function ChatHeader({ modelName, onModelSelect }: ChatHeaderProps) {
                       onModelSelect(model);
                       setOpen(false);
                     }}
-                    className="w-full text-left px-4 py-2 hover:bg-gray-100 text-sm"
+                    className="w-full text-left px-4 py-2 hover:bg-gray-100 hover:rounded-xl text-sm"
                   >
                     {model}
                   </button>

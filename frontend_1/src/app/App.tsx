@@ -56,10 +56,9 @@ export default function App() {
   const handleExampleClick = (text: string) => {
     handleSendMessage(text);
   };
-
-  const handleModelSelect = () => {
-    // Placeholder for model selection
-    console.log('Model selector clicked');
+  const [model, useModel] = useState("Auto");
+  const handleModelSelect = (selectedModel: string) => {
+    useModel(selectedModel);
   };
 
   return (
@@ -70,7 +69,7 @@ export default function App() {
         {activeTab === 'chat' && (
           <>
             <ChatHeader
-              modelName="Groq AI Assistant"
+              modelName={model}
               onModelSelect={handleModelSelect}
             />
 

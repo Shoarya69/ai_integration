@@ -59,8 +59,8 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
       {/* Footer */}
       <div className="p-4 border-t border-gray-200/50">
         <div className="px-4 py-3 bg-white rounded-xl">
-          <p className="text-xs text-gray-500">Made with care</p>
-          <p className="text-xs text-gray-400 mt-1">Nordic Design</p>
+          <p className="text-xs text-gray-500">Made By the best Developer</p>
+          <p className="text-x font-bold text-gray-400 mt-1">Shoarya bansal</p>
         </div>
       </div>
 
