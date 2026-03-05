@@ -10,7 +10,8 @@ export default function App() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
+  const [model, useModel] = useState("llama-3.1-8b-instant");
+  
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -20,7 +21,7 @@ export default function App() {
   }, [messages]);
 
   const generateAIResponse = async (userMessage: string): Promise<string> => {
-    const responses = await sendMessage(userMessage);
+    const responses = await sendMessage(userMessage,model);
     return responses;
   };
 
@@ -56,7 +57,6 @@ export default function App() {
   const handleExampleClick = (text: string) => {
     handleSendMessage(text);
   };
-  const [model, useModel] = useState("Auto");
   const handleModelSelect = (selectedModel: string) => {
     useModel(selectedModel);
   };

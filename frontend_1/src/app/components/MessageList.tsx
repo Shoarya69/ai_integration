@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Bot, User } from 'lucide-react';
+import ReactMarkdown from "react-markdown";
 
 export interface Message {
   id: string;
@@ -40,7 +41,8 @@ export function MessageList({ messages }: MessageListProps) {
               }`}
             >
               <p className={`leading-relaxed ${message.role === 'assistant' ? 'text-gray-800' : ''}`}>
-                {message.content}
+                <ReactMarkdown>{message.content}</ReactMarkdown>
+                
               </p>
               <p
                 className={`text-xs mt-2 ${

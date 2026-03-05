@@ -7,11 +7,26 @@ interface ChatHeaderProps {
 }
 
 const models = [
-  "llama-3.3-70b-versatile",
-  "mixtral-8x7b",
-  "gemma-7b-it",
-  "gpt-4",
-  "Auto",
+      "groq/compound-mini",
+      "meta-llama/llama-prompt-guard-2-86m",
+      "llama-3.3-70b-versatile",
+      "allam-2-7b",
+      "canopylabs/orpheus-v1-english",
+      "groq/compound",
+      "moonshotai/kimi-k2-instruct",
+      "whisper-large-v3",
+      "moonshotai/kimi-k2-instruct-0905",
+      "meta-llama/llama-prompt-guard-2-22m",
+      "openai/gpt-oss-safeguard-20b",
+      "llama-3.1-8b-instant",
+      "qwen/qwen3-32b",
+      "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b",
+      "canopylabs/orpheus-arabic-saudi",
+      "meta-llama/llama-guard-4-12b",
+      "whisper-large-v3-turbo",
+      "meta-llama/llama-4-scout-17b-16e-instruct",
 ];
 
 export function ChatHeader({ modelName, onModelSelect }: ChatHeaderProps) {
@@ -44,7 +59,7 @@ export function ChatHeader({ modelName, onModelSelect }: ChatHeaderProps) {
             </button>
 
             {open && (
-              <div className="absolute right-0  mt-2 w-56 bg-white border border-gray-200 rounded-xl shadow-lg">
+              <div className="absolute right-0 mt-2 w-56 max-h-60 overflow-y-auto bg-white border border-gray-200 rounded-xl shadow-lg">
 
                 {models.map((model) => (
                   <button
