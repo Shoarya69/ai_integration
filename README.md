@@ -65,7 +65,7 @@ Groq AI Service (Async)
     Run Server
     uvicorn main:app --reload --port 8000
 
-    Backend URL: <code>http://127.0.0.1:8000
+    Backend URL: http://127.0.0.1:8000
 </div>
 
 <div class="section">
@@ -87,9 +87,7 @@ Groq AI Service (Async)
   "query": "Your message here"
 }</pre>
 
-    Response:{
-  "response": "AI generated reply"
-}
+    Response:{"response": "AIgenerated      reply"}
 </pre>
 </div>
 
